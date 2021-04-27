@@ -1,0 +1,76 @@
+.introduction {
+    width: 280px;
+    margin: 40px auto;
+}
+
+.introductionText {
+    line-height: normal;
+}
+
+.introductionSpan {
+    font-weight: 600;
+    display: block;
+}
+
+@media screen and (min-width: 375px) {
+    .introduction {
+        width: 320px;
+    }
+}
+
+
+@media screen and (min-width: 414px) {
+    .introduction {
+        width: 360px;
+       
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .introduction {
+        width: 680px;
+        margin: 0px;
+        padding-bottom: 40px;
+        background-size: 40px 40px;
+        background-image:
+        linear-gradient(to right, grey 1px, transparent 1px),
+        linear-gradient(to bottom, grey 1px, transparent 1px);
+        border-right: 1px solid grey;
+    }
+
+    .introductionText {
+        width: 399px;
+        height: 279px;
+        margin-left: 81px;
+        margin-top: 41px;
+        padding: 40px;
+        background: var(--bg-color);
+
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .introduction {
+        width: 920px;
+    }
+
+    .introductionText {
+        width: 759px;
+        height: 439px;
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 2rem;
+        line-height: normal;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .introduction {
+        width: 1440px;
+    }
+
+    .introductionText {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+}

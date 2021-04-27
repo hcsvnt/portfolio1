@@ -1,0 +1,131 @@
+.header {
+    width: 280px;
+    height: 240px;
+    margin: 20px auto;
+    position: relative;
+    background-color: var(--bg-color);
+    background-size: 40px 40px;
+    background-image:
+    linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.title {
+    width: 239px;
+    height: 39px;
+    margin-top: 41px;
+    margin-left: 1px;
+    display: inline-block;
+    background-color: var(--aqua);
+
+    font-family: var(--ff-8bit);
+    line-height: 40px;
+    text-align: center;
+}
+
+.subtitle {
+    width: 239px;
+    height: 39px;
+    margin-left: 1px;
+    display: inline-block;
+    background-color: var(--bg-color);
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;    
+}
+
+.header__image {
+    position: absolute;
+    top: 120px;
+    right: 39px;
+    width: 79px;
+    height: 79px;
+    margin-top: 1px;
+
+    border: 1px solid grey;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+}
+
+.header__image:hover {
+    transform: rotate(180deg);
+}
+
+@media screen and (min-width: 360px) {
+    .header {
+        margin-top:40px;
+    }
+}
+
+
+@media screen and (min-width: 375px) {
+    .header {
+        width: 320px;
+        margin-top: 27px;
+    }
+
+    .title, .subtitle {
+        margin-left: 41px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .header {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .header {
+        width: 680px;
+        height: 240px;
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    .title {
+        height: 79px;
+        width: 399px;
+        line-height: 80px;
+    }
+
+    .subtitle {
+        display: block;
+        margin-top: 1px;
+        height: 79px;
+        width: 399px;
+        line-height: 80px;
+    }
+
+    .header__image {
+        width: 159px;
+        height: 159px;
+        top: 0;
+        right: 0px;
+    }
+
+    .header__image__bg {
+        width: 179px;
+        height: 180px;
+        position: absolute;
+        top: -20px;
+        right: -21px;
+        background-color: var(--bg-color);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header {
+        width: 920px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        width: 1440px;
+    }
+}

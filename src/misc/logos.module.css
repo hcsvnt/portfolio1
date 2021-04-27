@@ -1,0 +1,14 @@
+.logo {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.ctfLogo {
+    transform: scale(1.2);
+
+}
+
+.nextLogo {
+    transform: scale(1.3);
+}

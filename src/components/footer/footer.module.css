@@ -1,0 +1,124 @@
+.footer {
+    width: 280px;
+    height: 80px;
+    margin: 21px 21px;
+    
+    background-color: var(--bg-color);
+    background-size: 40px 40px;
+    background-image:
+    linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+
+    letter-spacing: -1px;
+    line-height: 40px;
+}
+
+.copy {
+    margin-left: 40px;
+    padding: 8px;
+    font-family: var(--ff-main);
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.year {
+    padding: 8px;
+    font-size: 24px;
+    font-family: var(--ff-main);
+    font-weight: 600;
+}
+
+.name {
+    height: 38px;
+    margin-left: 1px;
+    margin-top: 1px;
+    font-family: var(--ff-8bit);
+    text-align: center;
+    background-color: var(--p-pink);
+}
+
+.icons {
+    width: 240px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    margin: 0 8px;
+}
+
+.builtWith {
+    display: none;
+}
+
+
+@media screen and (min-width: 375px) {
+    .footer {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .footer {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .footer {
+        height: 80px;
+        width: 680px;
+        margin: 0;
+        display: flex;
+        position: relative;
+    }
+
+    .name {
+        width: 319px;
+        height: 39px;
+        margin-left: 1px;
+    }
+
+    .icons {
+        width: 279px;
+        margin-left: 41px;
+    }
+
+    .builtWith {
+        display: block;
+        position: absolute;
+        width: 279px;
+        height: 38px;
+        top: 41px;
+        left: 41px;
+        background-color: var(--bg-color);
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .footer {
+        width: 920px;
+        padding-left: 120px;
+    }
+
+    .builtWith {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        width: 1440px;
+        padding-left: 360px;
+    }
+
+    .builtWith {
+        margin-left: 360px;
+    }
+}

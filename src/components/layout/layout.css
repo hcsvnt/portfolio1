@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@300;400&display=swap');
+
+/* 
+font-family: 'Press Start 2P', cursive;
+font-family: 'Quicksand', sans-serif; 
+*/
+
+/* 
+main background color #FAF0E3;
+old background color #faebd7;
+
+aquamarine #7fffd4; 
+
+easy-pink #FAD7CA;
+pink-pink #ffc0cb;
+*/
+
+:root {
+    --bg-color: #FAF0E3;
+    --aqua: #7fffd4;
+    --e-pink: #FAD7CA;
+    --p-pink: #ffc0cb;
+
+    --ff-main: 'Quicksand', sans-serif;
+    --ff-8bit: 'Press Start 2P', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif; 
+    font-family: var(--ff-main);
+    background-color: var(--bg-color);
+}
+
+.wrapper {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.3rem;
+}
+
+
+@media screen and (min-width: 375px) {
+    .wrapper {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .wrapper {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .wrapper {
+        width: 680px;
+        margin: 24px auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        width: 920px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        width: 1440px;
+    }
+}
+
+
+
+

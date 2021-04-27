@@ -1,0 +1,18 @@
+.widerIframe {
+    width: 330px;
+}
+
+@media screen and (min-width: 1440px) {
+    .grid {
+        display: grid;
+        grid-template-columns:  720px  720px;
+        grid-template-rows: repeat(3, 1000px);
+
+        background-size: 40px 40px;
+        background-image:
+        linear-gradient(to right, grey 1px, transparent 1px),
+        linear-gradient(to bottom, grey 1px, transparent 1px);
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+}

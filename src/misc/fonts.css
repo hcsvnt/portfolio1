@@ -1,0 +1,17 @@
+
+
+/* 
+font-family: 'Press Start 2P', cursive;
+font-family: 'Quicksand', sans-serif; 
+*/
+
+:root {
+    --bg-color: #FAF0E3;
+    --aqua: #7fffd4;
+    --e-pink: #FAD7CA;
+    --p-pink: #ffc0cb;
+
+    --ff-main: 'Quicksand', sans-serif;
+    --ff-8bit: 'Press Start 2P', cursive;
+    
+}
