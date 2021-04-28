@@ -37,11 +37,17 @@ const longText =    <article className={styles.introductionText}>
                         </p>
                     </article>
 
-const Button = (props) => {
-    const {buttonValue, setTextVersion} = props;
+const TextButton = (props) => {
+    const {buttonValue, textVersion, setTextVersion} = props;
+    const buttonStyle = styles.textButton;
+    const activeButtonStyle = `${styles.textButton} ${styles.textButtonActive}`;
 
     return (
-        <button name="textButton" value={buttonValue}  onClick={() => setTextVersion(buttonValue)}>{buttonValue}</button>
+        <button name="textButton" 
+        value={buttonValue} 
+        className={ textVersion === buttonValue ? activeButtonStyle : buttonStyle}
+        onClick={() => setTextVersion(buttonValue)}>
+            {buttonValue} version</button>
     )
 }
 
@@ -51,8 +57,10 @@ const Introduction = () => {
     return (
         <section className={styles.introduction}>
             { textVersion === 'short' ? shortText : longText }
-            <Button buttonValue="short" setTextVersion={setTextVersion} />
-            <Button buttonValue="long" setTextVersion={setTextVersion}  />
+            <div className={styles.buttonContainer}>
+                <TextButton buttonValue="short" textVersion={textVersion} setTextVersion={setTextVersion} />
+                <TextButton buttonValue="long"  textVersion={textVersion} setTextVersion={setTextVersion}  />
+            </div>
         </section>
         
     )

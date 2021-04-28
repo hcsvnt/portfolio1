@@ -1,6 +1,8 @@
 .introduction {
     width: 280px;
     margin: 40px auto;
+    position: relative;
+    /* background-color: blueviolet; */
 }
 
 .introductionText {
@@ -10,11 +12,59 @@
 .introductionSpan {
     font-weight: 600;
     display: block;
+    margin-bottom: 1rem;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    /* background-color: blue; */
+    /* position: absolute;
+    top: -20px;
+    right: -0px; */
+}
+
+.textButton {
+    /* width: 120px; */
+    /* height: 40px; */
+    margin: 0;
+    padding: 8px;
+    outline: none;
+    border: 1px grey solid;
+    background-color: var(--bg-color);
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: 300ms ease-in-out;
+}
+
+.textButton:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.textButtonActive {
+    text-decoration: underline;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 375px) {
     .introduction {
         width: 320px;
+    }
+
+    .buttonContainer {
+        padding: 0 40px;
+    }
+
+    .textButton {
+        width: 120px;
     }
 }
 
