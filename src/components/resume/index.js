@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import SectionHeader from '../sectionHeader'
 import Skill from '../skill';
+import CV from '../../pages/cv'
 import * as styles from './resume.module.css'
 
 
@@ -109,11 +110,12 @@ const Skills = () => {
                                         <p className={styles.extended__heading}>
                                             resume/CV:
                                         </p>
+                                        <Link to="/cv">
                                         <div className={styles.cvContainer}>
-
+                                            <CV />
                                         </div>
-                                        <Link to="/cv"> link to cv
                                         </Link>
+                                        
                                     </div>
                                 </div>
 

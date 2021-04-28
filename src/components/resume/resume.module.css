@@ -64,7 +64,11 @@
     width: 280px;
     height: 320px;
     margin: 40px auto;
-    background-color: turquoise;
+    /* background-color: turquoise; */
+    border: 1px grey solid;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -171,7 +175,6 @@
         width: 480px;
         height: 560px;
         margin: 40px 0;
-        background-color: turquoise;
     }
 
 }
@@ -185,11 +188,11 @@
         padding-left: 120px;
     }
 
-    .contentHidden p {
+    .contentHidden__p {
         /* height: 119px; */
         width: 279px;
         top: 1px;
-        left: 321px;
+        left: 561px;
         padding: 8px 0;
         font-size: 1.5rem;
         line-height: normal;

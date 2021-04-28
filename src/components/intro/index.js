@@ -58,8 +58,8 @@ const Introduction = () => {
         <section className={styles.introduction}>
             { textVersion === 'short' ? shortText : longText }
             <div className={styles.buttonContainer}>
-                <TextButton buttonValue="short" textVersion={textVersion} setTextVersion={setTextVersion} />
-                <TextButton buttonValue="long"  textVersion={textVersion} setTextVersion={setTextVersion}  />
+                {/* <TextButton buttonValue="short" textVersion={textVersion} setTextVersion={setTextVersion} />
+                <TextButton buttonValue="long"  textVersion={textVersion} setTextVersion={setTextVersion}  /> */}
             </div>
         </section>
         

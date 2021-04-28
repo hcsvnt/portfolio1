@@ -87,6 +87,10 @@
         border-bottom: none;
     }
 
+    .title, .subtitle {
+        margin-left: 81px;
+    }
+
     .title {
         height: 79px;
         width: 399px;
@@ -127,5 +131,9 @@
 @media screen and (min-width: 1440px) {
     .header {
         width: 1440px;
+    }
+
+    .title, .subtitle {
+        margin-left: 161px;
     }
 }

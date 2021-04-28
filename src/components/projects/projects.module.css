@@ -6,7 +6,7 @@
     .grid {
         display: grid;
         grid-template-columns:  720px  720px;
-        grid-template-rows: repeat(3, 1000px);
+        grid-template-rows: repeat(2, 1000px);
 
         background-size: 40px 40px;
         background-image:

@@ -35,6 +35,7 @@
     height: 38px;
     margin-left: 1px;
     margin-top: 1px;
+    padding: 10px;
     font-family: var(--ff-8bit);
     text-align: center;
     background-color: var(--p-pink);
@@ -52,8 +53,14 @@
     margin: 0 8px;
 }
 
+.iconLink {
+    display: flex;
+    
+}
+
 .builtWith {
     display: none;
+    padding: 8px;
 }
 
 

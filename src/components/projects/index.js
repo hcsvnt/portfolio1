@@ -82,7 +82,7 @@ const Projects = () => {
                             ]}
                     />
                 </div> */}
-                <Project
+                {/* <Project
                     id="5"
                     title="Photo Journal"
                     description="A photo blog for my photography lorem20"
@@ -96,7 +96,7 @@ const Projects = () => {
                         "graphQl",
                         "ctf"
                         ]}
-                />
+                /> */}
             
             </div>
         </div>

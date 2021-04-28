@@ -92,6 +92,7 @@
     .introductionText {
         width: 399px;
         height: 279px;
+        height: 399px;
         margin-left: 81px;
         margin-top: 41px;
         padding: 40px;
@@ -110,8 +111,10 @@
         height: 439px;
         font-size: 1.5rem;
         font-weight: 300;
-        line-height: 2rem;
-        line-height: normal;
+    }
+
+    .introductionText p {
+        line-height: 130%;
     }
 }
 
@@ -121,7 +124,7 @@
     }
 
     .introductionText {
-        font-size: 2rem;
+        /* font-size: 2rem; */
         font-weight: 300;
     }
 }
