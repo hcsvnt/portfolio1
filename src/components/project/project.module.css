@@ -4,6 +4,10 @@
     margin: 40px auto;
 }
 
+.link {
+    padding: 8px 0;
+}
+
 @media screen and (min-width: 375px) {
     .container {
         width: 320px;
@@ -61,7 +65,7 @@
 .link {
     height: 40px;
     width: 200px;
-    padding: 8px 1rem;
+    padding: 8px 0;
     margin: 40px auto;
     display: block;
     background-color: var(--p-pink);

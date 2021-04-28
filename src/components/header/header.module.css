@@ -29,6 +29,7 @@
     width: 239px;
     height: 39px;
     margin-left: 1px;
+    padding: 0;
     display: inline-block;
     background-color: var(--bg-color);
 
