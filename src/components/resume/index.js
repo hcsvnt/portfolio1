@@ -32,7 +32,7 @@ const Puzzle = (props) => {
                     newStr = string.
                 `}
             </span>
-            <input className={styles.puzzleInput} placeholder="hihi" value={method} onChange={ (e) => setMethod(e.target.value) } />
+            <input className={styles.puzzleInput} placeholder="your solution" value={method} onChange={ (e) => setMethod(e.target.value) } />
             <span>
                     ;                
             </span>
