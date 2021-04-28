@@ -68,7 +68,7 @@ const Skills = () => {
     const [method, setMethod] = useState('');
     
     const string = "Robert Makłowicz is the future president of Poland."
-    const correctAnswer = "slice(24, 30)"
+    const correctAnswer = ["slice(24, 30)", "substr(24, 6)"]
 
     // function puzzle(string) {
     //     const a = string.slice(24,30);
@@ -135,7 +135,7 @@ const Skills = () => {
             </article>
             { method !== correctAnswer ? contentHidden : null }
             <article className={styles.skillsExtended}>
-                { method === correctAnswer ? contentExtended : null }
+                { correctAnswer.includes(method) ? contentExtended : null }
             </article>
         </section>
 

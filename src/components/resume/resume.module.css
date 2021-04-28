@@ -192,7 +192,7 @@
         /* height: 119px; */
         width: 279px;
         top: 1px;
-        left: 561px;
+        left: 321px;
         padding: 8px 0;
         font-size: 1.5rem;
         line-height: normal;
@@ -225,5 +225,9 @@
 
     .right {
         grid-column: 4;
+    }
+
+    .contentHidden__p {
+        left: 561px;
     }
 }
