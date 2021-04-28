@@ -1,0 +1,63 @@
+.cvContainer {
+    /* background-color: blueviolet; */
+    max-width: 620px;
+    padding: 1rem;
+    margin: 0 auto;
+
+}
+
+.cvContainer section {
+    /* margin: 1rem; */
+    max-width: 600px;
+
+}
+
+.cvContainer h1 {
+    font-size: 2rem;
+}
+
+.cvContainer h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.cvContainer h4 {
+    margin: 0.75rem 0;
+}
+
+.cvContainer ul {
+    margin-left: 1rem;
+}
+
+.cvContainer p {
+    margin: 1.5rem 0;
+    line-height: 1.4;
+}
+
+.cvHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cvHeader h2 {
+    /* font-size: 1.5rem; */
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-decoration: underline;
+    /* font-style: italic; */
+}
+
+.contactSection {
+    /* text-align: center; */
+    line-height: 1.4;
+
+}
+
+.contactSection ul {
+    list-style: none;
+    margin-left: inherit;
+}
+
+@media screen and (min-width: 650px) {
+
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'gatsby';
 import SectionHeader from '../sectionHeader'
 import Skill from '../skill';
 import * as styles from './resume.module.css'
@@ -111,6 +112,8 @@ const Skills = () => {
                                         <div className={styles.cvContainer}>
 
                                         </div>
+                                        <Link to="/cv"> link to cv
+                                        </Link>
                                     </div>
                                 </div>
 
