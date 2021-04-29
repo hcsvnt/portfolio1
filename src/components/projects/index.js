@@ -64,6 +64,23 @@ const Projects = () => {
                     ]}
                 />
 
+                <Project
+                    id="4" 
+                    title="Snake Game"
+                    description="
+                                A Nokia 3210-style Snake game built with plain JavaScript.
+                                Use keyboard arrows to control the Snake.
+                                This won't work on touch-only devices, yet but will be implemented in the near future. 
+                    "
+                    src="https://fervent-poitras-f0db05.netlify.app"
+                    stack={[
+                        "html",
+                        "css",
+                        "js",
+                        ]}
+                    />
+
+
 
                 {/* <div className={projectsStyles.widerIframe}>
                     <Project

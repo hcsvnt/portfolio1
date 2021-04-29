@@ -32,11 +32,16 @@ const Footer = () => {
             </p>
 
             <p className={footerStyles.builtWith}>
-                Built with Gatsby, hosted on Netlify
+                Built with
+                <a href="https://www.gatsbyjs.com" target="blank" className={footerStyles.builtWith__link}>
+                    Gatsby
+                </a>
+                , hosted on 
+                <a href="https://www.netlify.com" target="blank" className={footerStyles.builtWith__link}>
+                    Netlify
+                </a>
             </p>
-
         </div>
-
     )
 }
 

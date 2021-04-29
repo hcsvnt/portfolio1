@@ -131,7 +131,7 @@
 
     .contentHidden__p {
         height: 79px;
-        width: 239px;
+        width: 279px;
         position: absolute;
         left: 201px;
         top: 41px;
@@ -189,13 +189,9 @@
     }
 
     .contentHidden__p {
-        /* height: 119px; */
         width: 279px;
-        top: 1px;
+        top: 41px;
         left: 321px;
-        padding: 8px 0;
-        font-size: 1.5rem;
-        line-height: normal;
     }
 }
 
@@ -203,8 +199,6 @@
     .skillsContainer {
         width: 1440px;
         margin-top: -1px;
-        /* border-top: ; */
-        /* margin-left: 0; */
     }
 
     .skills {
