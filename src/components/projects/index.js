@@ -69,8 +69,8 @@ const Projects = () => {
                     title="Snake Game"
                     description="
                                 A Nokia 3210-style Snake game built with plain JavaScript.
-                                Use keyboard arrows to control the Snake.
-                                This won't work on touch-only devices, yet but will be implemented in the near future. 
+                                Use keyboard arrows to control the Snake on your computer, on touch devices use Nokia's
+                                default 2 - 4 - 6 - 8 layout. Don't cry.
                     "
                     src="https://fervent-poitras-f0db05.netlify.app"
                     stack={[
