@@ -71,7 +71,7 @@ const Projects = () => {
                                 A Nokia 3210-style Snake game built with plain JavaScript.
                                 Use keyboard arrows to control the Snake on your computer, on touch devices use Nokia's
                                 default 2 - 4 - 6 - 8 layout.
-                                To start and restart the game use the big button, a game menu is being built.
+                                To start and restart the game use the big button, a game menu is being built.t
                     "
                     src="https://fervent-poitras-f0db05.netlify.app"
                     stack={[

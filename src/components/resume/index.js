@@ -133,7 +133,7 @@ const Skills = () => {
                 </p>
                 <Puzzle string={string} method={method} setMethod={setMethod} />
             </article>
-            { method !== correctAnswer ? contentHidden : null }
+            { !correctAnswer.includes(method) ? contentHidden : null }
             <article className={styles.skillsExtended}>
                 { correctAnswer.includes(method) ? contentExtended : null }
             </article>
