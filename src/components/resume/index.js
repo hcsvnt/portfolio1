@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import SectionHeader from '../sectionHeader'
 import Skill from '../skill';
-import CV from '../../pages/cv'
-import * as styles from './resume.module.css'
+import Snip from "../../images/snip.jpg";
+import * as styles from './resume.module.css';
 
-
+const CvSnip = () => <img src={Snip}></img>
 
 const Puzzle = (props) => {
     const {string, method, setMethod} = props;
@@ -67,8 +67,8 @@ const Skills = () => {
 
     const [method, setMethod] = useState('');
     
-    const string = "Robert Makłowicz is the future president of Poland."
-    const correctAnswer = ["slice(24, 30)", "substr(24, 6)"]
+    const string = "Robert Makłowicz is the future president of Poland.";
+    const correctAnswer = ["slice(24, 30)", "substr(24, 6)", "slice(24,30)", "substr(24,6)"];
 
     // function puzzle(string) {
     //     const a = string.slice(24,30);
@@ -112,7 +112,7 @@ const Skills = () => {
                                         </p>
                                         <Link to="/cv">
                                         <div className={styles.cvContainer}>
-                                            <CV />
+                                            <CvSnip />
                                         </div>
                                         </Link>
                                         

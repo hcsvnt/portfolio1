@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import "./cv.css";
 
 
-const CV = () => {
+const Cv = () => {
     return (
 
         <article className='cvContainer'>
@@ -32,25 +32,25 @@ const CV = () => {
                 <h2>
                     Work Experience
                 </h2>
+                <h4>Freelance Photographer at Matt Hallala Photography | Apr '18 - Now</h4>
                 <p>
-                    <h4>Freelance Photographer at Matt Hallala Photography | Apr '18 - Now</h4>
                     Delivering great customer experience through photography services and project consultaions.
                     Actively seeking clients, planning, organising and executing photo shoots.
                     Managing strategy, pricing, finances, studio space and equipment.
                 </p>
+                <h4>Head Barista at Urban Angel Hanover Street, Edinburgh | May '17 - Now</h4>
                 <p>
-                    <h4>Head Barista at Urban Angel Hanover Street, Edinburgh | May '17 - Now</h4>
                     Preparing various coffee based beverages in a busy high street environment.
                     Creating menus, managing pricing and "food cost", quality control.
                     Defining coffee extraction guidelines, managing stock, workflows, staff training.
                 </p>
+                <h4>Bartender / Bar Lead at Forum Przestrzenie, Kraków | Jun '14 - Feb '17</h4>
                 <p>
-                    <h4>Bartender / Bar Lead at Forum Przestrzenie, Kraków | Jun '14 - Feb '17</h4>
                     Working in a fast-paced high-capacity bar environment. 
                     Designing and planning of menus, managing stock, staff training, organisation of the bar.
                 </p>
+                <h4>Head Shaper at Parkowa Dolina, EU  | Shaper at Schneestern, Germany | '11 - '13</h4>
                 <p>
-                    <h4>Head Shaper at Parkowa Dolina, EU  | Shaper at Schneestern, Germany | '11 - '13</h4>
                     Design, planning, building, maintenance and management of snowparks and professional competition courses 
                     for freestyle snowboarding and skiing. Managing teams of Shapers, equipment and stock.
                 </p>
@@ -159,4 +159,4 @@ const CV = () => {
     )
 }
 
-export default CV
+export default Cv

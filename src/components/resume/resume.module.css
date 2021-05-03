@@ -71,6 +71,12 @@
     text-decoration: none;
 }
 
+.cvContainer img {
+    /* display: none; */
+    width: 100%;
+    /* object-fit: cover; */
+}
+
 
 @media screen and (min-width: 375px) {
     .skillsContainer {
