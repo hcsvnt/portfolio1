@@ -15,20 +15,18 @@
     margin-bottom: 1rem;
 }
 
+.introduction_p {
+    margin-bottom: 1rem;
+}
+
 .buttonContainer {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 40px;
-    /* background-color: blue; */
-    /* position: absolute;
-    top: -20px;
-    right: -0px; */
 }
 
 .textButton {
-    /* width: 120px; */
-    /* height: 40px; */
     margin: 0;
     padding: 8px;
     outline: none;
@@ -91,13 +89,33 @@
 
     .introductionText {
         width: 399px;
+        width: 519px;
         height: 279px;
         height: 399px;
+        height: 359px;
+        /* height: 900px; */
         margin-left: 81px;
         margin-top: 41px;
         padding: 40px;
         background: var(--bg-color);
 
+    }
+
+    .textLong {
+        height: 719px;
+    }
+
+    .buttonContainer {
+        justify-content: space-evenly;
+    }
+
+    .textButton {
+        box-shadow: none;
+        height: 39px;
+        margin-top: 1px;
+        width: 119px;
+        margin-left: 2px;
+        border: none;
     }
 }
 
@@ -108,13 +126,21 @@
 
     .introductionText {
         width: 759px;
-        height: 439px;
+        height: 479px;
         font-size: 1.5rem;
         font-weight: 300;
     }
 
+    .textLong {
+        height: 999px;
+    }
+
     .introductionText p {
         line-height: 130%;
+    }
+
+    .buttonContainer {
+        width: 920px;
     }
 }
 

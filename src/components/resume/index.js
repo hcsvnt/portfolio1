@@ -2,68 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import SectionHeader from '../sectionHeader'
 import Skill from '../skill';
+import Puzzle from '../puzzle';
 import Snip from "../../images/snip.jpg";
 import * as styles from './resume.module.css';
 
-const CvSnip = () => <img src={Snip}></img>
+const CvSnip = () => <img src={Snip} alt="CV snippet"></img>
 
-const Puzzle = (props) => {
-    const {string, method, setMethod} = props;
-    return (
-        <div className={styles.puzzleContainer}>
-        <br />
-        <p>
-            Complete the "puzzle" function (by typing in the correct Java Script method and 
-            parameters) so that the function returns true.
-        </p>
-        <div className={styles.puzzle}>
-            <p>
-                const string = "{string}";
-            </p>
-
-            <br />
-            <p>
-                {`
-                    function puzzle( ) {
-                `}
-            </p>
-            <span>
-                {`
-                    newStr = string.
-                `}
-            </span>
-            <input className={styles.puzzleInput} placeholder="your solution" value={method} onChange={ (e) => setMethod(e.target.value) } />
-            <span>
-                    ;                
-            </span>
-            <p>
-                {`
-                    if (newStr === "future") {
-                `}
-            </p>
-            <p>
-                {`
-                        return true;
-                `}
-            </p>
-            <p className={styles.indent}>
-                {`
-                    }
-                `}
-            </p>
-            <p>
-                {`
-                    } 
-                `}
-                    
-            </p>
-        </div>
-    </div>
-
-    )
-}
-
-const Skills = () => {
+const Resume = () => {
 
     const [method, setMethod] = useState('');
     
@@ -97,7 +42,7 @@ const Skills = () => {
 
                         </div>
 
-    const contentExtended =     <div className={styles.hiding}>
+    const contentExtended =     <article className={styles.hiding}>
                                     <div className={styles.left}>
                                         <p className={styles.extended__heading}>
                                             Skill chart:
@@ -117,14 +62,17 @@ const Skills = () => {
                                         </Link>
                                         
                                     </div>
-                                </div>
+                                </article>
 
-    const contentHidden = <div className={styles.contentHidden}><p className={styles.contentHidden__p}>content is hidden,<br /> solve the puzzle to view</p></div>;
+    const contentHidden =   <article className={styles.contentHidden}>
+                                <p className={styles.contentHidden__p}>content is hidden,<br />
+                                    solve the puzzle to view
+                                </p>
+                            </article>;
 
-    
     return (
         <section className={styles.skillsContainer}>
-            <SectionHeader key="1">
+            <SectionHeader>
                 resume:
             </SectionHeader>
             <article className={styles.skills}>
@@ -142,4 +90,4 @@ const Skills = () => {
     )
 }
 
-export default Skills;
+export default Resume;

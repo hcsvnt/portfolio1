@@ -6,7 +6,7 @@ import * as projectsStyles from "./projects.module.css";
 
 const Projects = () => {
     return (
-        <div>
+        <section>
             <SectionHeader>
                 Projects
             </SectionHeader>
@@ -117,7 +117,7 @@ const Projects = () => {
                 /> */}
             
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -6,7 +6,7 @@ const Project = (props) => {
     const {id, title, description, src, stack} = props;
 
     return (
-        <div key={id} className={styles.container}>
+        <article key={id} className={styles.container}>
             <p className={styles.title}>{title}</p>
             <p className={styles.description}>{description}</p>
             <embed className={styles.miniBrowser} src={src}></embed>
@@ -15,14 +15,12 @@ const Project = (props) => {
                 open in new tab
             </a>
             <div className={styles.tech__header}>
-                <p className={styles.tech__header__p}>
-                Tech stack:
-                </p>
+                <p className={styles.tech__header__p}>Tech stack:</p>
                 <div className={styles.stack}>
                     {stack.map((item, index) => <Logo key={index} name={`${item}Logo`} />)}
                 </div>
             </div>
-        </div>
+        </article>
     )
 }
 
