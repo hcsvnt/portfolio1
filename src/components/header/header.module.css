@@ -39,6 +39,15 @@
     text-align: center;    
 }
 
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 .header__image {
     position: absolute;
     top: 120px;
@@ -53,7 +62,8 @@
 }
 
 .header__image:hover {
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
+    animation: rotation 1000ms infinite linear;
 }
 
 @media screen and (min-width: 360px) {

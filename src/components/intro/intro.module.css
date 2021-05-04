@@ -59,7 +59,7 @@
     }
 
     .buttonContainer {
-        padding: 0 40px;
+        /* padding: 0 40px; */
     }
 
     .textButton {
@@ -106,16 +106,19 @@
     }
 
     .buttonContainer {
-        justify-content: space-evenly;
+        width: 120px;
+        height: 121px;
+        margin: 0;
+        position: absolute;
+        top: 80px;
+        right: -2px;
+        flex-direction: column;
     }
 
     .textButton {
-        box-shadow: none;
-        height: 39px;
-        margin-top: 1px;
         width: 119px;
-        margin-left: 2px;
-        border: none;
+        height: 41px;
+        /* box-shadow: none; */
     }
 }
 
@@ -138,10 +141,6 @@
     .introductionText p {
         line-height: 130%;
     }
-
-    .buttonContainer {
-        width: 920px;
-    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -152,5 +151,19 @@
     .introductionText {
         /* font-size: 2rem; */
         font-weight: 300;
+        height: 439px;
+        /* width: 1279px; */
+    }
+
+    .textLong {
+        height: 999px;
+    }
+
+    .buttonContainer {
+        right: 519px;
+    }
+
+    .textButton {
+        width: 121px;
     }
 }

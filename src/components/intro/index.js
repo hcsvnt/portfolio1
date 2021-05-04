@@ -12,7 +12,7 @@ const shortText =    <article className={styles.introductionText}>
                             (probably inebriated) people.
                         </p>
                         <p className={styles.introduction_p}>
-                            While I hate airports, but I am a champion at sleeping on planes.
+                            While I hate airports, I am a champion at sleeping on planes.
                             I really like dogs, but Maine Coon cats just are my thing, sorry.
                         </p>
                     </article>
