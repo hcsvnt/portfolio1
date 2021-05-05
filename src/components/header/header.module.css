@@ -6,10 +6,16 @@
     background-color: var(--bg-color);
     background-size: 40px 40px;
     background-image:
-    linear-gradient(to right, grey 1px, transparent 1px),
-    linear-gradient(to bottom, grey 1px, transparent 1px);
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
+    linear-gradient(to right, var(--grid-clr) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-clr) 1px, transparent 1px);
+    border-bottom: 1px solid var(--grid-clr);
+    border-right: 1px solid var(--grid-clr);
+
+    /* background-image:
+    linear-gradient(to right, orangered 1px, transparent 1px),
+    linear-gradient(to bottom, orangered 1px, transparent 1px);
+    border-bottom: 1px solid orangered;
+    border-right: 1px solid orangered; */
 }
 
 .title {
@@ -56,9 +62,11 @@
     height: 79px;
     margin-top: 1px;
 
-    border: 1px solid grey;
+    border: 1px solid var(--grid-clr);
     border-radius: 50%;
     transition: transform 500ms ease-in-out;
+    filter: brightness(0.5);
+    filter: hue-rotate(225deg) brightness(0.75);
 }
 
 .header__image:hover {

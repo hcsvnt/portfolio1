@@ -2,7 +2,6 @@
     width: 280px;
     margin: 40px auto;
     position: relative;
-    /* background-color: blueviolet; */
 }
 
 .introductionText {
@@ -30,8 +29,9 @@
     margin: 0;
     padding: 8px;
     outline: none;
-    border: 1px grey solid;
+    border: 1px var(--grid-clr) solid;
     background-color: var(--bg-color);
+    color: inherit;
     box-shadow: none;
     font-family: inherit;
     font-size: 1rem;
@@ -82,9 +82,9 @@
         padding-bottom: 40px;
         background-size: 40px 40px;
         background-image:
-        linear-gradient(to right, grey 1px, transparent 1px),
-        linear-gradient(to bottom, grey 1px, transparent 1px);
-        border-right: 1px solid grey;
+        linear-gradient(to right, var(--grid-clr) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-clr) 1px, transparent 1px);
+        border-right: 1px solid var(--grid-clr);
     }
 
     .introductionText {

@@ -17,12 +17,51 @@ pink-pink #ffc0cb;
 
 :root {
     --bg-color: #FAF0E3;
+    --bg-color: hsl(30, 50%, 94%);  
+
+    --grid-clr: grey;
     --aqua: #7fffd4;
     --e-pink: #FAD7CA;
     --p-pink: #ffc0cb;
 
     --ff-main: 'Quicksand', sans-serif;
     --ff-8bit: 'Press Start 2P', cursive;
+}
+
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        color:orangered;
+        color: hsl(290, 100%, 60%);
+        color: white;
+        
+        --bg-color: #333333;
+        --bg-color: #1b1b1b;
+    
+        --grid-clr: hsl(290, 100%, 25%);
+        --grid-clr: hsl(0, 0%, 50%);
+
+    }
+} */
+
+
+/* img[src*=".svg"] {
+  filter: invert(100%);
+}
+
+img {
+    filter: invert(100%);
+} */
+
+.themeToggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background: violet;
 }
 
 * {
@@ -33,6 +72,9 @@ pink-pink #ffc0cb;
 
 html {
     font-size: 16px;
+    /* color: blueviolet;
+    color: white;
+    color: orangered; */
 }
 
 body {
@@ -41,12 +83,34 @@ body {
     background-color: var(--bg-color);
 }
 
+.wrapper__outer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: auto;
+    /* background:yellow;     */
+
+    --bg-color: #FAF0E3;
+    --bg-color: hsl(30, 50%, 94%);  
+
+    --grid-clr: grey;
+    --aqua: #7fffd4;
+    --e-pink: #FAD7CA;
+    --p-pink: #ffc0cb;
+
+    --ff-main: 'Quicksand', sans-serif;
+    --ff-8bit: 'Press Start 2P', cursive;
+}
+
 .wrapper {
     width: 320px;
     height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    position: relative;  
+    /* delete position: relative once theme toggle is solved */
 }
 
 p {
@@ -84,7 +148,3 @@ p {
         width: 1440px;
     }
 }
-
-
-
-
