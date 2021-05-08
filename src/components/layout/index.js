@@ -8,20 +8,31 @@ const MoonSvg = () => {
     )
 }
 
+const useIsSsr = () => {
+    const [isSsr, setIsSsr] = useState(true);
+
+    useEffect(() => {
+        setIsSsr(false);
+    }, []);
+    return isSsr;
+}
+
 const useThemeDetection = () => {
+    const isSsr = useIsSsr();
     const getSystemTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches; 
     // accesses matchMedia's .matches which returns a boolean if system color scheme matches media query p-c-s: dark
-    const [isDarkOsTheme, setIsDarkOsTheme] = useState(getSystemTheme());
+    const [isDarkOsTheme, setIsDarkOsTheme] = useState(false);
     const mediaQueryListener = (e => {
         setIsDarkOsTheme(e.matches);
         
     });
 
     useEffect(() => {
+        if (!isSsr) setIsDarkOsTheme(getSystemTheme())
         const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
         darkThemeMq.addEventListener('change', mediaQueryListener);
         return () => darkThemeMq.removeEventListener('change', mediaQueryListener);
-    }, [isDarkOsTheme]);
+    }, [isDarkOsTheme, isSsr]);
     return isDarkOsTheme;
 }
 
@@ -59,6 +70,9 @@ const changeRootStyleValuesRapidly = (object) => {
 const Layout = ({children}) => {
 
     const [theme, setTheme] = useState('light');
+
+    const isSsr = useIsSsr();
+
     const isDarkOsTheme = useThemeDetection();
 
     useEffect(() => {
