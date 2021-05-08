@@ -4,28 +4,30 @@ import './layout.css';
 const useThemeDetection = () => {
     const getSystemTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches; 
     // accesses matchMedia's .matches which returns a boolean if system color scheme matches media query p-c-s: dark
-    const [isDarkTheme, setIsDarkTheme] = useState(getSystemTheme());
+    const [isDarkOsTheme, setIsDarkOsTheme] = useState(getSystemTheme());
     const mediaQueryListener = (e => {
-        setIsDarkTheme(e.matches);
+        setIsDarkOsTheme(e.matches);
+        
     });
 
-    // useEffect(() => {
-    //     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-    //     darkThemeMq.addEventListener(mediaQueryListener);
-    //     return () => darkThemeMq.removeEventListener(mediaQueryListener);
-    // }, []);
-    return isDarkTheme;
+    useEffect(() => {
+        const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+        darkThemeMq.addEventListener('change', mediaQueryListener);
+        return () => darkThemeMq.removeEventListener('change', mediaQueryListener);
+    }, [isDarkOsTheme]);
+    return isDarkOsTheme;
 }
 
+
 const darkThemeValues = {
-    ['--bg-color']: '#1b1b1b',
-    ['--grid-clr']: 'hsl(0, 0%, 50%)',
-    color: 'white'
+    '--bg-color': '#1b1b1b',
+    '--grid-clr': 'hsl(0, 0%, 50%)',
+    color: '#ececec'
 }
 
 const lightThemeValues = {
-    ['--bg-color']: 'hsl(30, 50%, 94%)',
-    ['--grid-clr']: 'grey',
+    '--bg-color': 'hsl(30, 50%, 94%)',
+    '--grid-clr': 'grey',
     color: 'black'
 }
 
@@ -39,38 +41,39 @@ const changeRootStyleValuesRapidly = (object) => {
     }); 
 };
 
-
 const Layout = ({children}) => {
 
     const [theme, setTheme] = useState('light');
-    const isDarkTheme = useThemeDetection();
+    const isDarkOsTheme = useThemeDetection();
 
     useEffect(() => {
-        if (isDarkTheme) {
-            setTheme('dark')
-            changeRootStyleValuesRapidly(darkThemeValues)
-        };
-    }, []);
+        isDarkOsTheme ? setDark() : setLight();
+    }, [isDarkOsTheme])
 
-    const themeToggle = () => {
-        console.log("let's get togglin'");
-       
-        if (theme === 'light') {
-            setTheme('dark');
-            changeRootStyleValuesRapidly(darkThemeValues)
-        }
-
-        if (theme === 'dark') {
-            setTheme('light');
-            changeRootStyleValuesRapidly(lightThemeValues)
-        }
+    function setLight() {
+        setTheme('light');
+        changeRootStyleValuesRapidly(lightThemeValues);
     }
+
+    function setDark() {
+        setTheme('dark');
+        changeRootStyleValuesRapidly(darkThemeValues);
+    }
+    
+    const manualThemeToggle = () => {
+        if (theme === 'light') {
+            setDark();
+        };
+        if (theme === 'dark') {
+            setLight();
+        };
+    };
 
     return (
         <div className="wrapper">
             {children}
             <button className="themeToggle"
-                    onClick={themeToggle}
+                    onClick={manualThemeToggle}
             >toggle mate</button>
         </div>
     )
