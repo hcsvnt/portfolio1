@@ -10,6 +10,8 @@ import nextJSLogo from '../svg/Nextjs.svg'
 import * as logoStyles from "./logos.module.css"
 
 
+let tester = true
+
 function simkaSwitch(name) {
     switch (name) {
         case 'htmlLogo':
@@ -43,8 +45,20 @@ function simkaSwitch(name) {
 
 const Logo = (props) => {
     const {name} = props;
+
+    function monoSvgClassNames() {
+        const nonMonoSvgs = ['gatsbyLogo', 'ctfLogo']
+        if (!nonMonoSvgs.includes(name)) {
+            return `${logoStyles.logo} ${logoStyles[name]} monoSvg`
+        }  else {
+            return `${logoStyles.logo} ${logoStyles[name]}`
+        }
+    }
+
+
+
     return (
-            <img key={name} className={`${logoStyles.logo} ${logoStyles[name]}`} src={simkaSwitch(name)} alt={`a ${name} logo`} />
+            <img key={name} className={monoSvgClassNames()} src={simkaSwitch(name)} alt={`a ${name} logo`} />
     )
 }
 

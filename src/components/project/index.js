@@ -17,7 +17,7 @@ const Project = (props) => {
             <div className={styles.tech__header}>
                 <p className={styles.tech__header__p}>Tech stack:</p>
                 <div className={styles.stack}>
-                    {stack.map((item, index) => <Logo key={index} name={`${item}Logo`} />)}
+                    {stack.map((item, index) => <Logo key={index} name={`${item}Logo`} alt={`${item}Logo`} />)}
                 </div>
             </div>
         </article>

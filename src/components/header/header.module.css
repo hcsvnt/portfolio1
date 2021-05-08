@@ -64,9 +64,8 @@
 
     border: 1px solid var(--grid-clr);
     border-radius: 50%;
-    transition: transform 500ms ease-in-out;
-    filter: brightness(0.5);
-    filter: hue-rotate(225deg) brightness(0.75);
+    transition: 300ms ease-in-out;
+    filter: var(--img-filter);
 }
 
 .header__image:hover {
@@ -74,17 +73,10 @@
     animation: rotation 1000ms infinite linear;
 }
 
-@media screen and (min-width: 360px) {
-    .header {
-        margin-top:40px;
-    }
-}
-
-
 @media screen and (min-width: 375px) {
     .header {
         width: 320px;
-        margin-top: 27px;
+        margin-top: 20px;
     }
 
     .title, .subtitle {

@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import moon from '../../svg/moon.svg';
 import './layout.css';
+
+const MoonSvg = () => {
+    return (
+        <img src={moon} name="switch themes" alt="moon icon for toggling themes" className='moonSvg' />
+    )
+}
 
 const useThemeDetection = () => {
     const getSystemTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches; 
@@ -22,13 +29,21 @@ const useThemeDetection = () => {
 const darkThemeValues = {
     '--bg-color': '#1b1b1b',
     '--grid-clr': 'hsl(0, 0%, 50%)',
-    color: '#ececec'
+    '--aqua': 'hsl(290, 70%, 70%)',
+    '--p-pink': 'hsl(290, 70%, 70%)',
+    color: '#ececec',
+    '--invert': 'invert(100%)',
+    '--img-filter': 'hue-rotate(225deg) brightness(0.75)'
 }
 
 const lightThemeValues = {
     '--bg-color': 'hsl(30, 50%, 94%)',
     '--grid-clr': 'grey',
-    color: 'black'
+    '--aqua': '#7fffd4',
+    '--p-pink': '#ffc0cb',
+    color: 'black',
+    '--invert': 'invert(0%)',
+    '--img-filter': 'hue-rotate(0deg) brightness(1)'
 }
 
 const changeRootStyleValuesRapidly = (object) => {
@@ -74,7 +89,8 @@ const Layout = ({children}) => {
             {children}
             <button className="themeToggle"
                     onClick={manualThemeToggle}
-            >toggle mate</button>
+            ><MoonSvg /></button>
+            
         </div>
     )
 }
