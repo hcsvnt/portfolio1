@@ -24,7 +24,7 @@ const Puzzle = (props) => {
             </p>
             <span>
                 {`
-                    newStr = string.
+                    const newStr = string.
                 `}
             </span>
             <input className={styles.puzzleInput} placeholder="your solution" value={method} onChange={ (e) => setMethod(e.target.value) } />

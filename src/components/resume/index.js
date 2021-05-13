@@ -13,7 +13,7 @@ const Resume = () => {
     const [method, setMethod] = useState('');
     
     const string = "Robert Makłowicz is the future president of Poland.";
-    const correctAnswer = ["slice(24, 30)", "substr(24, 6)", "slice(24,30)", "substr(24,6)"];
+    const correctAnswer = ["slice(24, 30)", "substr(24, 6)", "slice(24,30)", "substr(24,6)", 'split(" ")[4]'];
 
     // function puzzle(string) {
     //     const a = string.slice(24,30);

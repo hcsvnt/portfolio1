@@ -19,13 +19,12 @@ const useIsSsr = () => {
 
 const useThemeDetection = () => {
     const isSsr = useIsSsr();
-    const getSystemTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches; 
-    // accesses matchMedia's .matches which returns a boolean if system color scheme matches media query p-c-s: dark
-    const [isDarkOsTheme, setIsDarkOsTheme] = useState(false);
+    const getSystemTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches; //this can't run on a server
+    const [isDarkOsTheme, setIsDarkOsTheme] = useState(false); // setting default light mode initially
     const mediaQueryListener = (e => {
-        setIsDarkOsTheme(e.matches);
-        
-    });
+        setIsDarkOsTheme(e.matches);  
+        }
+    );
 
     useEffect(() => {
         if (!isSsr) setIsDarkOsTheme(getSystemTheme())
