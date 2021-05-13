@@ -1,3 +1,5 @@
+import React from 'react';
+
 const MagicScriptTag = () => {
     const codeToRunOnClient = `
     (function setThemeBeforeBody() {
