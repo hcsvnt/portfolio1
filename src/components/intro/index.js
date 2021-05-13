@@ -27,7 +27,11 @@ const longText =    <article className={`${styles.introductionText} ${styles.tex
                             secondly because I wanted to build and maintain my own photography website and blog (working on it).
                         </p>
                         <p className={styles.introduction_p}>
-                            Outside of coding I had been doing some freelance photography (www.matthallala.com) before covid struck, some documentary.
+                            Outside of coding I had been doing some freelance photography  
+                            <a href="www.matthallala.com" target="blank">
+                                ( www.matthallala.com )
+                            </a>
+                            before covid struck, some documentary.
                             some portrait work. I enjoy photography very much privately, so in general I tend to hoard cameras and lenses, and prints, and
                             hard drives, and take lots of pictures of all kinds.
                             I'm also very into music (who isn't, though) and have quite a collection of records — I used to DJ and organise club parties

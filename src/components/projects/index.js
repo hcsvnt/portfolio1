@@ -3,7 +3,6 @@ import SectionHeader from '../sectionHeader';
 import Project from '../project';
 import * as projectsStyles from "./projects.module.css";
 
-
 const Projects = () => {
     return (
         <section>

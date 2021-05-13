@@ -38,11 +38,11 @@ const useThemeDetection = () => {
 
 const darkThemeValues = {
     '--bg-color': '#1b1b1b',
-    '--grid-clr': 'hsl(0, 0%, 50%)',
-    '--aqua': 'hsl(290, 70%, 70%)',
-    '--p-pink': 'hsl(290, 70%, 70%)',
+    '--grid-clr': 'hsl(0, 0%, 70%)',
+    '--aqua': 'hsl(310, 60%, 70%)',
+    '--p-pink': 'hsl(310, 50%, 70%)',
     color: '#ececec',
-    '--invert': 'invert(100%)',
+    '--invert': 'invert(90%)',
     '--img-filter': 'hue-rotate(225deg) brightness(0.75)'
 };
 

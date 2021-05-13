@@ -17,7 +17,10 @@ const Footer = () => {
                     className={footerStyles.iconLink} target="blank">
                         <img className={`${footerStyles.icon} monoSvg`} src={GithubIcon} alt="github icon"/>
                 </a>
-                    {/* <img className={footerStyles.icon} src={LinkedinIcon} alt="linkedin icon" /> */}
+                <a href="http://www.linkedin.com/in/mateusz-hallala" 
+                    className={footerStyles.iconLink} target="blank">
+                        <img className={`${footerStyles.icon} monoSvg`} src={LinkedinIcon} alt="linkedin icon" />
+                </a>
                 <a href="https://www.matthallala.com/" 
                     className={footerStyles.iconLink} target="blank">
                         <img className={`${footerStyles.icon} monoSvg`} src={CameraIcon} alt="photography camera icon" />

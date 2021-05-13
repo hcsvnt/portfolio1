@@ -58,6 +58,10 @@
     margin-left: inherit;
 }
 
+.contactSection a {
+    color: inherit;
+}
+
 @media screen and (min-width: 650px) {
 
 }

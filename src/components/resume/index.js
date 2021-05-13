@@ -6,7 +6,8 @@ import Puzzle from '../puzzle';
 import Snip from "../../images/snip.jpg";
 import * as styles from './resume.module.css';
 
-const CvSnip = () => <img src={Snip} alt="CV snippet"></img>
+const CvSnip = () => <img src={Snip} alt="CV snippet" className={styles.cvSnip}></img>
+// const CvSnip = () => <iframe src="../cv" className={styles.cvSnip}></iframe>
 
 const Resume = () => {
 
@@ -14,7 +15,7 @@ const Resume = () => {
     
     const string = "Robert Makłowicz is the future president of Poland.";
     const correctAnswer = ["slice(24, 30)", "substr(24, 6)", "slice(24,30)", "substr(24,6)", 'split(" ")[4]', "split(' ')[4]",
-                            "split(' ')[8-4]]", "split(' ')[8 - 4]]", 'split(" ")[8-4]]', 'split(" ")[8 - 4]]'];
+                            "split(' ')[8-4]", "split(' ')[8 - 4]", 'split(" ")[8-4]', 'split(" ")[8 - 4]'];
 
     // function puzzle(string) {
     //     const a = string.slice(24,30);
@@ -54,13 +55,15 @@ const Resume = () => {
                                     </div>
                                     <div className={styles.right}>
                                         <p className={styles.extended__heading}>
-                                            resume/CV:
+                                            <Link to="/cv" target="_blank" className={styles.textLink}>
+                                                resume/CV:
+                                            </Link>
                                         </p>
-                                        <Link to="/cv">
                                         <div className={styles.cvContainer}>
+                                        <Link to="/cv" target="_blank">
                                             <CvSnip />
-                                        </div>
                                         </Link>
+                                        </div>
                                         
                                     </div>
                                 </article>

@@ -10,12 +10,6 @@
     linear-gradient(to bottom, var(--grid-clr) 1px, transparent 1px);
     border-bottom: 1px solid var(--grid-clr);
     border-right: 1px solid var(--grid-clr);
-
-    /* background-image:
-    linear-gradient(to right, orangered 1px, transparent 1px),
-    linear-gradient(to bottom, orangered 1px, transparent 1px);
-    border-bottom: 1px solid orangered;
-    border-right: 1px solid orangered; */
 }
 
 .title {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../misc/logos'
+import Logo from '../../misc/logos';
 import * as styles from "./project.module.css";
 
 const Project = (props) => {

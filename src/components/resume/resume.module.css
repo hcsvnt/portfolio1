@@ -4,6 +4,10 @@
     background-color: var(--bg-color);
 }
 
+.left, .right {
+    margin-top: 40px;
+}
+
 .disclaimer {
     height: 40px;
     margin-top: 1rem;
@@ -69,10 +73,16 @@
     overflow: hidden;
     color: inherit;
     text-decoration: none;
+    /* display: none; */
 }
 
-.cvContainer img {
+.cvSnip {
     width: 100%;
+    /* height: 100%; */
+}
+
+.textLink {
+    color: inherit;
 }
 
 
@@ -159,7 +169,6 @@
     .extended__heading {
         font-size: 2rem;
     }
-
 
     .adobe {
         height: 39px;

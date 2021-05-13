@@ -4,7 +4,7 @@ import Header from "../components/header";
 import Introduction from '../components/intro'
 import Resume from "../components/resume";
 import Footer from "../components/footer";
-import Projects from "../components/projects"
+import Projects from "../components/projects";
 
 const IndexPage = () => {
   return (

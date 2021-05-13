@@ -3,7 +3,7 @@ import React from 'react';
 const MagicScriptTag = () => {
     const codeToRunOnClient = `
     (function setThemeBeforeBody() {
-        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const isSystemThemeDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
         const darkThemeValues = {
             '--bg-color': '#1b1b1b',
@@ -43,7 +43,7 @@ const MagicScriptTag = () => {
             changeRootStyleValuesRapidly(darkThemeValues);
         };
 
-        systemTheme ? setDark() : setLight();
+        isSystemThemeDark ? setDark() : setLight();
     })();
     `;
     // eslint-disable-next-line react/no-danger

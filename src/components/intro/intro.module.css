@@ -18,6 +18,11 @@
     margin-bottom: 1rem;
 }
 
+.introduction_p a {
+    color: inherit;
+    margin: auto 0.75rem;
+}
+
 .buttonContainer {
     display: flex;
     justify-content: space-between;
