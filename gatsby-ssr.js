@@ -36,12 +36,10 @@ const MagicScriptTag = () => {
         };
 
         function setLight() {
-            setTheme('light');
             changeRootStyleValuesRapidly(lightThemeValues);
         };
 
         function setDark() {
-            setTheme('dark');
             changeRootStyleValuesRapidly(darkThemeValues);
         };
 
