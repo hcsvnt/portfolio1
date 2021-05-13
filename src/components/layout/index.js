@@ -44,7 +44,7 @@ const darkThemeValues = {
     color: '#ececec',
     '--invert': 'invert(100%)',
     '--img-filter': 'hue-rotate(225deg) brightness(0.75)'
-}
+};
 
 const lightThemeValues = {
     '--bg-color': 'hsl(30, 50%, 94%)',
@@ -54,7 +54,7 @@ const lightThemeValues = {
     color: 'black',
     '--invert': 'invert(0%)',
     '--img-filter': 'hue-rotate(0deg) brightness(1)'
-}
+};
 
 const changeRootStyleValuesRapidly = (object) => {
     const arrOfArr = Object.entries(object); 
@@ -73,20 +73,21 @@ const Layout = ({children}) => {
     const isSsr = useIsSsr();
 
     const isDarkOsTheme = useThemeDetection();
-
+   
     useEffect(() => {
         isDarkOsTheme ? setDark() : setLight();
-    }, [isDarkOsTheme])
+
+    }, [isDarkOsTheme]);
 
     function setLight() {
         setTheme('light');
         changeRootStyleValuesRapidly(lightThemeValues);
-    }
+    };
 
     function setDark() {
         setTheme('dark');
         changeRootStyleValuesRapidly(darkThemeValues);
-    }
+    };
     
     const manualThemeToggle = () => {
         if (theme === 'light') {
@@ -106,6 +107,6 @@ const Layout = ({children}) => {
             
         </div>
     )
-}
+};
 
 export default Layout
