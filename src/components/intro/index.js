@@ -29,7 +29,7 @@ const longText =    <article className={`${styles.introductionText} ${styles.tex
                         <p className={styles.introduction_p}>
                             Outside of coding I had been doing some freelance photography  
                             <a href="www.matthallala.com" target="blank">
-                                ( www.matthallala.com )
+                                (matthallala.com)
                             </a>
                             before covid struck, some documentary.
                             some portrait work. I enjoy photography very much privately, so in general I tend to hoard cameras and lenses, and prints, and

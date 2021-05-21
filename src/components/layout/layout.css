@@ -15,7 +15,10 @@ easy-pink #FAD7CA;
 pink-pink #ffc0cb;
 */
 
+
+/* <meta name="color-scheme" content="dark light"> */
 :root {
+    color-scheme: light dark;
     --bg-color: #FAF0E3;
     --bg-color: hsl(30, 50%, 94%);  
 
