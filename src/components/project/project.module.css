@@ -81,6 +81,10 @@
     margin-left: -20px;
 }
 
+.browserImg {
+    object-fit: cover;
+}
+
 @media screen and (min-width: 375px) {
     .container {
         width: 320px;

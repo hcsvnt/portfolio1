@@ -2,6 +2,8 @@ import React from 'react';
 import SectionHeader from '../sectionHeader';
 import Project from '../project';
 import * as projectsStyles from "./projects.module.css";
+import SnakeImg from '../../images/Snake.jpg';
+import BrewdogImg from '../../images/Brewdog.jpg';
 
 const Projects = () => {
     return (
@@ -54,13 +56,15 @@ const Projects = () => {
                                 I also completely redesigned the app with some elements of the recently trendy neo-skeumorphism.
                     "
                     src="https://confident-jang-0c7ef7.netlify.app/"
+                    imgSrc={BrewdogImg}
                     stack={[
                         "html",
                         "css",
                         "js",
                         "react",
                         "next"
-                    ]}
+                        ]}
+                    iDisabled={true}
                 />
 
                 <Project
@@ -73,11 +77,13 @@ const Projects = () => {
                                 To start and restart the game use the big button. Vibration feedback won't work on IOS devices because Apple.
                     "
                     src="https://fervent-poitras-f0db05.netlify.app"
+                    imgSrc={SnakeImg}
                     stack={[
                         "html",
                         "css",
                         "js",
                         ]}
+                    iDisabled={true}
                     />
 
 
