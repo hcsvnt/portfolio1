@@ -18,7 +18,6 @@ pink-pink #ffc0cb;
 
 /* <meta name="color-scheme" content="dark light"> */
 :root {
-    color-scheme: light dark;
     --bg-color: #FAF0E3;
     --bg-color: hsl(30, 50%, 94%);  
 
@@ -33,6 +32,8 @@ pink-pink #ffc0cb;
     --invert: invert(0%);
 
     --img-filter: hue-rotate(0deg) brightness(1);
+
+    color-scheme: light;
 
     /* color: hsl(290, 100%, 25%); */
 }

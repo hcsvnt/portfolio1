@@ -37,6 +37,7 @@ const useThemeDetection = () => {
 
 
 const darkThemeValues = {
+    'color-scheme': 'dark',
     '--bg-color': '#1b1b1b',
     '--grid-clr': 'hsl(0, 0%, 70%)',
     '--aqua': 'hsl(310, 60%, 70%)',
@@ -47,6 +48,7 @@ const darkThemeValues = {
 };
 
 const lightThemeValues = {
+    'color-scheme': 'light',
     '--bg-color': 'hsl(30, 50%, 94%)',
     '--grid-clr': 'grey',
     '--aqua': '#7fffd4',
