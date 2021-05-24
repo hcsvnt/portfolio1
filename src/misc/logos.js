@@ -10,8 +10,6 @@ import nextJSLogo from '../svg/Nextjs.svg'
 import * as logoStyles from "./logos.module.css"
 
 
-let tester = true
-
 function simkaSwitch(name) {
     switch (name) {
         case 'htmlLogo':

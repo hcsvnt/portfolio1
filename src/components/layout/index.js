@@ -72,8 +72,6 @@ const Layout = ({children}) => {
 
     const [theme, setTheme] = useState('light');
 
-    const isSsr = useIsSsr();
-
     const isDarkOsTheme = useThemeDetection();
    
     useEffect(() => {
@@ -104,8 +102,9 @@ const Layout = ({children}) => {
         <div className="wrapper">
             {children}
             <button className="themeToggle"
-                    onClick={manualThemeToggle}
-            ><MoonSvg /></button>
+                    onClick={manualThemeToggle}>
+                        <MoonSvg />
+            </button>
             
         </div>
     )
