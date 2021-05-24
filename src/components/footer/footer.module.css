@@ -51,11 +51,12 @@
 .icon {
     width: 24px;
     margin: 0 8px;
+    
 }
 
 .iconLink {
     display: flex;
-    
+    height: 100%;
 }
 
 .builtWith {
