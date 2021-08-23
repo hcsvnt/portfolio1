@@ -38,7 +38,7 @@ const Cv = () => {
                     Actively seeking clients, planning, organising and executing photo shoots.
                     Managing strategy, pricing, finances, studio space and equipment.
                 </p>
-                <h4>Head Barista at Urban Angel Hanover Street, Edinburgh | May '17 - Now</h4>
+                <h4>Head Barista at Urban Angel Hanover Street, Edinburgh | May '17 - June '21</h4>
                 <p>
                     Preparing various coffee based beverages in a busy high street environment.
                     Creating menus, managing pricing and "food cost", quality control.
@@ -82,44 +82,50 @@ const Cv = () => {
                         Polish: native language
                     </li>
                     <li>
-                        English: fluent / near native
+                        English: C2+
                     </li>
                     <li>
-                        Spanish: basic knowledge (A2)
+                        Spanish: A2
+                    </li>
+                    <li>
+                        German: A1
                     </li>
                 </ul>    
             </section>
             <section>
                 <h2>
-                    Skills
+                    Tech Stack:
                 </h2>
                 <ul>
                     <li>
                         HTML
                     </li>
                     <li>
-                        CSS
+                        CSS (BEM, CSS Modules, Styled Components, Tailwind.css, MaterialUI, ThemeUI)
                     </li>
                     <li>
-                        JavaScript
+                        JavaScript (ES6+) and TypeScript
                     </li>
                     <li>
-                        React
+                        Unit Testing (Jasmine, Jest)
                     </li>
                     <li>
-                        Node.js
+                        React (Class, Functional, Hooks, Recoil, Redux, Gatsby, Next.js)
                     </li>
                     <li>
-                        Gatsby
+                        Vue 3 (Options API, Composition API, Router)
                     </li>
                     <li>
-                        Next.js
+                        REST, GraphQL
                     </li>
                     <li>
-                        GraphQL
+                        Node.js, NPM
                     </li>
                     <li>
                         Contentful
+                    </li>
+                    <li>
+                        Netlify
                     </li>
                     <li>
                         Git

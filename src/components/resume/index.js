@@ -3,11 +3,11 @@ import { Link } from 'gatsby';
 import SectionHeader from '../sectionHeader'
 import Skill from '../skill';
 import Puzzle from '../puzzle';
-import Snip from "../../images/snip.jpg";
+// import Snip from "../../images/snip.jpg";
 import * as styles from './resume.module.css';
 
-const CvSnip = () => <img src={Snip} alt="CV snippet" className={styles.cvSnip}></img>
-// const CvSnip = () => <iframe src="../cv" className={styles.cvSnip}></iframe>
+// const CvSnip = () => <img src={Snip} alt="CV snippet" className={styles.cvSnip}></img>
+const CvSnip = () => <iframe src="../cv" className={styles.cvSnip}></iframe>
 
 const Resume = () => {
 
@@ -25,24 +25,42 @@ const Resume = () => {
 
     // puzzle(string, method)
 
+    // const skillChart = <div className={styles.skillChart}>
+    //                         <Skill name="HTML" level="3" />
+    //                         <Skill name="CSS" level="3" />
+    //                         <Skill name="JS" level="2" />
+    //                         <Skill name="React" level="2" />
+    //                         <Skill name="GraphQL" level="1" />
+    //                         <Skill name="Gatsby" level="2" />
+    //                         <Skill name="NextJS" level="2" />
+    //                         <Skill name="Contentful" level="2" />
+    //                         <Skill name="NodeJS" level="1" />
+    //                         <Skill name="Git" level="2" />
+    //                         <p className={styles.adobe}>Adobe</p>
+    //                         <Skill name="XD" level="2" />
+    //                         <Skill name="PS" level="3" />
+    //                         <Skill name="LR" level="4" />
+    //                     </div>
     const skillChart = <div className={styles.skillChart}>
-                            <Skill name="HTML" level="3" />
-                            <Skill name="CSS" level="3" />
-                            <Skill name="JS" level="2" />
-                            <Skill name="React" level="2" />
-                            <Skill name="GraphQL" level="1" />
-                            <Skill name="Gatsby" level="2" />
-                            <Skill name="NextJS" level="2" />
-                            <Skill name="Contentful" level="2" />
-                            <Skill name="NodeJS" level="1" />
-                            <Skill name="Git" level="2" />
-                            <p className={styles.adobe}>Adobe</p>
-                            <Skill name="XD" level="2" />
-                            <Skill name="PS" level="3" />
-                            <Skill name="LR" level="4" />
-                            
-
-                        </div>
+                                <Skill name="HTML" level="3" />
+                                <Skill name="CSS" level="3" />
+                                <Skill name="JS" level="3" />
+                                <Skill name="TS" level="1" />
+                                <Skill name="Unit Testing" level="1" />
+                                <Skill name="React" level="3" />
+                                <Skill name="Gatsby, Next" level="3" />
+                                <Skill name="Vue3" level="1" />
+                                {/* <Skill name="GraphQL" level="1" /> */}
+                                {/* <Skill name="Gatsby" level="2" /> */}
+                                {/* <Skill name="NextJS" level="2" /> */}
+                                {/* <Skill name="Contentful" level="2" /> */}
+                                <Skill name="NodeJS" level="1" />
+                                <Skill name="Git" level="2" />
+                                <p className={styles.adobe}>Adobe</p>
+                                <Skill name="XD" level="2" />
+                                <Skill name="PS" level="3" />
+                                <Skill name="LR" level="4" />
+                            </div>
 
     const contentExtended =     <article className={styles.hiding}>
                                     <div className={styles.left}>
@@ -70,7 +88,7 @@ const Resume = () => {
 
     const contentHidden =   <article className={styles.contentHidden}>
                                 <p className={styles.contentHidden__p}>content is hidden,<br />
-                                    solve the puzzle to view
+                                    solve puzzle to view
                                 </p>
                             </article>;
 
