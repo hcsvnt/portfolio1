@@ -98,10 +98,10 @@ const Cv = () => {
                 </h2>
                 <ul>
                     <li>
-                        HTML
+                        HTML (HTML5, Semantic Markup)
                     </li>
                     <li>
-                        CSS (BEM, CSS Modules, Styled Components, Tailwind.css, MaterialUI, ThemeUI)
+                        CSS (SCSS, BEM, CSS Modules, Styled Components, Tailwind.css, MaterialUI, ThemeUI)
                     </li>
                     <li>
                         JavaScript (ES6+) and TypeScript
